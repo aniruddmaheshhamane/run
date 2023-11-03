@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style>
+    *{margin:0 ;
+    padding:0 ;}
+    
+    html,body{height: 100%;
+    width: 100%;}
+    
+   
+    
+
+    /* button{color: rgb(250, 244, 244);
+    background-color: rgb(14, 14, 26);
+height: 20px;
+width: 70px} */
+
+
+
+    #myImgs{
+        margin-left: 230px;
+        justify-content: center;
+    height: 500px;
+width: 700px;
+opacity: 1;
+}
+
+h1{color: black;
+    margin-left: 310px;
+opacity: 0;}
+   </style>
+
+</head>
+<body>
+    <!-- <div><img id="mia"  src="sa.jpeg.jpeg" alt=""></div> -->
+    <button id="presss">click</button>
+<img id="myImgs" src="" alt="" >
+<h1 id="aaa">🧑‍🤝‍🧑❤️"एक दिवस जुन्या मित्रांसाठी " ❤️👭</h1>
+<script>
+var mia = document.querySelectorAll("mi")
+var btn = document.querySelector("#presss")
+var hhh = document.querySelector("#aaa")
+btn.addEventListener("click",function(){
+
+    hhh.style.opacity= 1
+});
+
+(function() {
+    var myImgsAr = [
+    "a.jpeg.jpeg",
+    "b.jpeg.jpeg",
+    "c.jpeg.jpeg",
+    "d.jpeg.jpeg",
+    "e.jpeg.jpeg",
+    "f.jpeg.jpeg",];
+    var countImage = 1
+
+ 
+    setInterval(chgImage , 2000);
+    function chgImage(){
+         document
+    .getElementById("myImgs")
+    .setAttribute("src","s"+myImgsAr[countImage]);
+    countImage++
+    if(countImage == myImgsAr.length){
+        countImage = 0;
+    }
+
+}
+})();
+
+
+</script>
+</body>
+</html>
